@@ -1,0 +1,93 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sample Website for Endeavour Welfare Society</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section  class="sub-header">
+            <nav>
+                <a href="index.html"><img src="logo.png"></a>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+
+
+                    <ul>
+                        <li> <a href="index.html">Home</a></li>
+                        <li> <a href="about.html">About</a></li>
+                        <li> <a href="blog.html">Blog</a></li>
+                        <li> <a href="contact.html">Contact</a></li>
+                        
+                    </ul>
+
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+
+
+            </nav>
+        <h1>About Us</h1>
+            
+        </section>
+
+
+        <!---about us content-->
+    
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We helps  to get educational rights</h1>
+                <p>It is a non-governmental organization for welfare in the
+                     education field. It plays an important role in supporting
+                      the most vulnerable children to access their right to 
+                      education through innovative ideas such as forming student 
+                      groups and child-tracking systems, holding awareness workshops
+                       with parents to ensure that they send children to school.</p>
+                       <a href="" class="btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+            <img src="p3.png">
+           </div>
+        </div>
+    </section>
+
+
+
+
+<!----footer------>
+        <section class ="footer" >
+            <h4>About Us</h4>
+            <p>It is a non-governmental organization for welfare in the 
+                education field.<br> It plays an important role in 
+                supporting the most vulnerable <br>children to access 
+                their right to education</p>
+
+            <p style="font-size: small; padding: 20px;">Made by priyankakumatkar@gmail.com</p>
+        </section>
+
+
+
+
+
+
+<!----------javascript for toggle menu--------->
+        <script>
+            var navLinks=document.getElementById("nav-links");
+
+            function showMenu(){
+                navLinks.style.right="0";
+
+            }
+
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+
+
+        </script>
+    </body>
+
+<html>

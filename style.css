@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(5, 14, 49, 0.7),rgba(5, 14, 49, 0.7)), url(p4.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    width: 40px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: #fff;
+    margin: auto;
+    display: block;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100
+}
+
+.text-box{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+
+}
+.text-box h1{
+    font-size: 35px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    background: transparent;
+    font-size: 14px;
+    cursor: pointer;
+}
+nav .fa{
+    display:none;
+}
+
+.btn:hover{
+    border: 1px orangered;
+    background: orangered;
+    transition: 1s;
+}
+
+
+
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 25px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: orangered;
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+/*    -------footer-----*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+/*-------------About US Page ----------*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(p2.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header h1{
+    padding: 100px;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+
+}
+.about-col img{
+    width: 100%;
+}
+
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+.red-btn:hover{
+    color: white;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col h4{
+    color: brown;
+    padding: auto;
+    
+}
